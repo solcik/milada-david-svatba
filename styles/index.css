@@ -1,0 +1,4 @@
+@import './tailwind.css';
+@import './global.css';
+@import './utilities.css';
+@import '~react-photoswipe/lib/photoswipe.css';
