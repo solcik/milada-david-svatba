@@ -62,7 +62,7 @@ export default function Home(): JSX.Element {
             <p>
               Rádi bychom Vás pozvali na&nbsp;naši svatbu, která se bude konat 11.&nbsp;7.&nbsp;2020 v&nbsp;10:30{' '}
               <a href="#kde">na&nbsp;myslivecké chatě Bažantnice ve&nbsp;Varnsdorfu</a>. Obřad i&nbsp;vše ostatní bude
-              probíhat přímo na&nbsp;místě. Před obřadem pro Vás bude připraveno drobné občerstvení, včetně kávičky a
+              probíhat přímo na&nbsp;místě. Před obřadem pro Vás bude připraveno drobné občerstvení včetně kávičky a
               budou se rozdávat myrty. Necháme tedy na Vás, s&nbsp;jakým časovým předstihem dorazíte, abyste to všechno
               stihli.
             </p>
