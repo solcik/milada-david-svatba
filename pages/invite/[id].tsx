@@ -18,7 +18,7 @@ export default function Invite({ invite }: { invite: InviteT }): JSX.Element {
             <div className="text-6xl">Zveme {invite.count > 1 ? 'Vás' : 'Tě'}</div>
             <h2 className="text-4xl">{invite.name}</h2>
             <div className="text-5xl">
-              <Link href="/">na naši svatbu!</Link>
+              <Link href="/">&#9758; na naši svatbu!</Link>
             </div>
           </div>
         </div>
