@@ -53,39 +53,39 @@ export default function Home(): JSX.Element {
 
         <div className="w-full md:w-4/6 mx-4">
           <section>
-            <div className="flex flex-column justify-around space-x-4 mb-4 h-48">
+            <div className="flex flex-column justify-around items-center space-x-4 mb-4">
               <Photo photo={getPhoto('2019-12-23')} showGallery={showGallery} title="Najdi prstýnek!" />
               <Photo photo={getPhoto('2020-02-22')} showGallery={showGallery} />
             </div>
 
             <h2>Kdy?</h2>
             <p>
-              Rádi bychom Vás pozvali na&nbsp;naší svatbu, která se bude konat 11.&nbsp;7.&nbsp;2020 v&nbsp;10:30{' '}
+              Rádi bychom Vás pozvali na&nbsp;naši svatbu, která se bude konat 11.&nbsp;7.&nbsp;2020 v&nbsp;10:30{' '}
               <a href="#kde">na&nbsp;myslivecké chatě Bažantnice ve&nbsp;Varnsdorfu</a>. Obřad i&nbsp;vše ostatní bude
-              probíhat přímo na&nbsp;místě. Před obřadem pro Vás bude připraveno drobné občerstvení, včetně kávičky
-              a&nbsp;budou se rozdávat myrty. Necháme tedy na Vás s&nbsp;jakým časovým předstihem dorazíte, abyste to
-              všechno stihli.
+              probíhat přímo na&nbsp;místě. Před obřadem pro Vás bude připraveno drobné občerstvení, včetně kávičky a
+              budou se rozdávat myrty. Necháme tedy na Vás, s&nbsp;jakým časovým předstihem dorazíte, abyste to všechno
+              stihli.
             </p>
           </section>
           <section>
             <h2>Co a jak?</h2>
             <p>
-              Oblečte se na Naši svatbu, jak je Vám pohodlné, ale chtěli bychom Vás upozornit, že se drtivá část celého
-              dne bude odehrávat venku na louce, a proto nezapomeňte na vhodnou obuv.
+              Oblečte se na naši svatbu, jak je Vám pohodlné, ale chtěli bychom Vás upozornit, že se drtivá část celého
+              dne bude odehrávat venku na louce a proto nezapomeňte na vhodnou obuv.
             </p>
             <p>
               Na chatě není bohužel možnost ubytování. Ti, kteří s námi budou chtít zůstat do neděle (to preferujeme),
               si mohou na rozlehlé louce postavit stan (kdykoliv ve volné chvíli - například během focení).
             </p>
             <p>
-              Vzhledem k tomu, že dopředu nevíme, jaké bude počasí doporučujeme si sebou vzít na večer deku, případně
+              Vzhledem k tomu, že dopředu nevíme, jaké bude počasí, doporučujeme si s sebou vzít na večer deku, případně
               polštářek pod zadek na lavičky.
             </p>
-            <p>Jste zváni na celou svatbu - od obřadu, svatebního obědu až po večerní raut.</p>
+            <p>Jste zváni na celou svatbu - od obřadu, svatebního oběda, až po večerní raut.</p>
             <p>Dejte nám prosím vědět, pokud máte potravinové alergie či preferujete vegetariánské jídlo.</p>
             <h2>Dary?</h2>
             <p>
-              Naší domácnost máme již plně vybavenou a pokud nám s něčím chcete udělat radost, rádi od Vás přijmeme
+              Naši domácnost máme již plně vybavenou a pokud nám s něčím chcete udělat radost, rádi od Vás přijmeme
               finanční dar na nějaký zážitek.
             </p>
           </section>
@@ -135,7 +135,7 @@ export default function Home(): JSX.Element {
 
             <div className="text-center mb-4">
               <span className="text-2xl">
-                <strong>Myslivecká chata Bažantnice</strong>
+                <strong>myslivecká chata Bažantnice</strong>
               </span>
             </div>
 
@@ -157,7 +157,12 @@ export default function Home(): JSX.Element {
 
           <section>
             <h2>Vaše účast</h2>
-            <p className="text-center">Prosím potvrďte nám Vaší účast!</p>
+            <p className="text-center">Prosím potvrďte nám Vaši účast!</p>
+          </section>
+
+          <section>
+            <h2>P.S.</h2>
+            <p className="text-center">Na fotky jde kliknout, otevře se Vám galerie!</p>
           </section>
 
           <section id="galerie" className="block md:hidden">
