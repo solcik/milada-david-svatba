@@ -134,12 +134,11 @@ const invites: InviteT[] = [
     count: 2,
   },
   {
-    // Zveme Tě Sabino na naši svatbu. Pozvánku a další informace najdete na https://milada-david-svatba.now.sh/invite/0718495a
+    // Zveme Váš Sabčo a Petře na naši svatbu. Pozvánku a další informace najdete na https://milada-david-svatba.now.sh/invite/0718495a
     id: '0718495a',
-    name: 'Sabino',
+    name: 'Sabčo a Petře',
     group: 'Milada',
-    count: 1,
-    accepted: false,
+    count: 2,
   },
   {
     // Zveme Vás Denčo + 1 (Jirka??) na naši svatbu. Pozvánku a další informace najdete na https://milada-david-svatba.now.sh/invite/c4683594
