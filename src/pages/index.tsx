@@ -54,39 +54,48 @@ export default function Home(): JSX.Element {
         <div className="w-full md:w-4/6 mx-4">
           <section>
             <div className="flex flex-column justify-around items-center space-x-4 mb-4">
-              <Photo photo={getPhoto('2019-12-23')} showGallery={showGallery} title="Najdi prstýnek!" />
+              <Photo
+                photo={getPhoto('2019-12-23')}
+                showGallery={showGallery}
+                title="Najdi prstýnek!"
+              />
               <Photo photo={getPhoto('2020-02-22')} showGallery={showGallery} />
             </div>
 
             <h2>Kdy?</h2>
             <p>
-              Rádi bychom Vás pozvali na&nbsp;naši svatbu, která se bude konat 11.&nbsp;7.&nbsp;2020 v&nbsp;10:30{' '}
-              <a href="#kde">na&nbsp;myslivecké chatě Bažantnice ve&nbsp;Varnsdorfu</a>. Obřad i&nbsp;vše ostatní bude
-              probíhat přímo na&nbsp;místě. Před obřadem pro Vás bude připraveno drobné občerstvení včetně kávičky a
-              budou se rozdávat myrty. Necháme tedy na Vás, s&nbsp;jakým časovým předstihem dorazíte, abyste to všechno
-              stihli.
+              Rádi bychom Vás pozvali na&nbsp;naši svatbu, která se bude konat 11.&nbsp;7.&nbsp;2020
+              v&nbsp;10:30 <a href="#kde">na&nbsp;myslivecké chatě Bažantnice ve&nbsp;Varnsdorfu</a>
+              . Obřad i&nbsp;vše ostatní bude probíhat přímo na&nbsp;místě. Před obřadem pro Vás
+              bude připraveno drobné občerstvení včetně kávičky a budou se rozdávat myrty. Necháme
+              tedy na Vás, s&nbsp;jakým časovým předstihem dorazíte, abyste to všechno stihli.
             </p>
           </section>
           <section>
             <h2>Co a jak?</h2>
             <p>
-              Oblečte se na naši svatbu, jak je Vám pohodlné, ale chtěli bychom Vás upozornit, že se drtivá část celého
-              dne bude odehrávat venku na louce a proto nezapomeňte na vhodnou obuv.
+              Oblečte se na naši svatbu, jak je Vám pohodlné, ale chtěli bychom Vás upozornit, že se
+              drtivá část celého dne bude odehrávat venku na louce a proto nezapomeňte na vhodnou
+              obuv.
             </p>
             <p>
-              Na chatě není bohužel možnost ubytování. Ti, kteří s námi budou chtít zůstat do neděle (to preferujeme),
-              si mohou na rozlehlé louce postavit stan (kdykoliv ve volné chvíli - například během focení).
+              Na chatě není bohužel možnost ubytování. Ti, kteří s námi budou chtít zůstat do neděle
+              (to preferujeme), si mohou na rozlehlé louce postavit stan (kdykoliv ve volné chvíli -
+              například během focení).
             </p>
             <p>
-              Vzhledem k tomu, že dopředu nevíme, jaké bude počasí, doporučujeme si s sebou vzít na večer deku, případně
-              polštářek pod zadek na lavičky.
+              Vzhledem k tomu, že dopředu nevíme, jaké bude počasí, doporučujeme si s sebou vzít na
+              večer deku, případně polštářek pod zadek na lavičky.
             </p>
             <p>Jste zváni na celou svatbu - od obřadu, svatebního oběda, až po večerní raut.</p>
-            <p>Dejte nám prosím vědět, pokud máte potravinové alergie či preferujete vegetariánské jídlo.</p>
+            <p>
+              Dejte nám prosím vědět, pokud máte potravinové alergie či preferujete vegetariánské
+              jídlo.
+            </p>
             <h2>Dary?</h2>
             <p>
-              Naši domácnost máme již plně vybavenou a pokud nám s něčím chcete udělat radost, rádi od Vás přijmeme
-              finanční dar na nějaký zážitek.
+              Naši domácnost máme již plně vybavenou a pokud nám s něčím chcete udělat radost, rádi
+              od Vás přijmeme finanční dar na nějaký zážitek.
             </p>
           </section>
           <section id="harmonogram">
@@ -167,7 +176,10 @@ export default function Home(): JSX.Element {
 
           <section id="galerie" className="block md:hidden">
             <h2>Galerie</h2>
-            <div id="thumbnails" className="flex flex-row flex-wrap justify-around space-x-4 space-y-4">
+            <div
+              id="thumbnails"
+              className="flex flex-row flex-wrap justify-around space-x-4 space-y-4"
+            >
               {photos.map((photo) => (
                 <Photo key={photo.id} photo={photo} showGallery={showGallery} lazy />
               ))}

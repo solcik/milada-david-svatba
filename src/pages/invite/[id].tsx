@@ -1,18 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import R from 'ramda';
 
 import Layout from '../../components/Layout';
-import { getAllInvites, getInvite, InviteT } from '../../lib/invites';
+import { getAllInvites, getInvite } from '../../lib/invites';
 
-export default function Invite({ invite }: { invite: InviteT }): JSX.Element {
+export default function Invite({
+  invite,
+}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element {
   return (
     <Layout>
       <div className="flex flex-col p-12 mx-auto border-dashed border-2 border-gray-600">
         <div className="flex flex-col md:flex-row justify-center items-center mb-12">
           <div className="mb-6 md:mb-0 md:mr-12">
-            <img className="h-64 w-64 rounded-t-full object-contain" src="/images/invite.jpg" alt="pozvánka" />
+            <img
+              className="h-64 w-64 rounded-t-full object-contain"
+              src="/images/invite.jpg"
+              alt="pozvánka"
+            />
           </div>
           <div className="text-center mt-6 md:my-0">
             <div className="text-6xl">Zveme {invite.count > 1 ? 'Vás' : 'Tě'}</div>
@@ -37,7 +43,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context;
   const id = params.id as string;
 
