@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'lazysizes';
 
 import Layout from '../components/Layout';
 import Gallery from '../components/Gallery';
@@ -42,13 +41,13 @@ export default function Home(): JSX.Element {
           <Photo photo={getPhoto('2012-02-09')} showGallery={showGallery} />
           <Photo photo={getPhoto('2013-02-22')} showGallery={showGallery} />
           <Photo photo={getPhoto('2013-09-12')} showGallery={showGallery} />
-          <Photo photo={getPhoto('2015-02-14')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2015-07-19')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2015-12-04')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2015-12-26')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2016-03-09')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2018-09-27')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2019-05-30')} showGallery={showGallery} lazy />
+          <Photo photo={getPhoto('2015-02-14')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2015-07-19')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2015-12-04')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2015-12-26')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2016-03-09')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2018-09-27')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2019-05-30')} showGallery={showGallery} />
         </div>
 
         <div className="w-full md:w-4/6 mx-4">
@@ -149,8 +148,8 @@ export default function Home(): JSX.Element {
             </div>
 
             <div className="flex flex-column justify-around space-x-4 mb-4 h-48">
-              <Photo photo={getPhoto('bazantnice_dole')} showGallery={showGallery} lazy />
-              <Photo photo={getPhoto('bazantnice_horejskek')} showGallery={showGallery} lazy />
+              <Photo photo={getPhoto('bazantnice_dole')} showGallery={showGallery} />
+              <Photo photo={getPhoto('bazantnice_horejskek')} showGallery={showGallery} />
             </div>
 
             <div className="h-64">
@@ -181,7 +180,7 @@ export default function Home(): JSX.Element {
               className="flex flex-row flex-wrap justify-around space-x-4 space-y-4"
             >
               {photos.map((photo) => (
-                <Photo key={photo.id} photo={photo} showGallery={showGallery} lazy />
+                <Photo key={photo.id} photo={photo} showGallery={showGallery} />
               ))}
             </div>
           </section>
@@ -193,13 +192,13 @@ export default function Home(): JSX.Element {
           <Photo photo={getPhoto('2012-02-11')} showGallery={showGallery} />
           <Photo photo={getPhoto('2014-01-09')} showGallery={showGallery} />
           <Photo photo={getPhoto('2014-12-20')} showGallery={showGallery} />
-          <Photo photo={getPhoto('2015-07-09')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2015-07-27')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2015-12-11')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2016-02-06')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2018-09-26')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2019-03-15')} showGallery={showGallery} lazy />
-          <Photo photo={getPhoto('2019-09-21')} showGallery={showGallery} lazy />
+          <Photo photo={getPhoto('2015-07-09')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2015-07-27')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2015-12-11')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2016-02-06')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2018-09-26')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2019-03-15')} showGallery={showGallery} />
+          <Photo photo={getPhoto('2019-09-21')} showGallery={showGallery} />
         </div>
       </div>
 

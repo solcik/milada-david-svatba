@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType } from 'next';
-import R from 'ramda';
 
 import Layout from '../../components/Layout';
 import { getAllInvites, getInvite } from '../../lib/invites';
@@ -35,7 +34,7 @@ export default function Invite({
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const invites = getAllInvites();
-  const paths = R.map((invite) => ({ params: { id: invite.id } }), invites);
+  const paths = invites.map((invite) => ({ params: { id: invite.id } }));
 
   return {
     paths,
