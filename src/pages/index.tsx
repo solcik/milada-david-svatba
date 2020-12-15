@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
               <Photo photo={getPhoto('2020-02-22')} showGallery={showGallery} />
             </div>
 
-            <h2>Kdy?</h2>
+            <h2>Kdy? ..... </h2>
             <p>
               Rádi bychom Vás pozvali na&nbsp;naši svatbu, která se bude konat 11.&nbsp;7.&nbsp;2020
               v&nbsp;10:30 <a href="#kde">na&nbsp;myslivecké chatě Bažantnice ve&nbsp;Varnsdorfu</a>
